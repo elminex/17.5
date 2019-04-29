@@ -1,6 +1,6 @@
-let OSinfo = require('./modules/OSinfo');
-let EventEmitter = require('events').EventEmitter;
-let emitter = new EventEmitter();
+const OSinfo = require('./modules/OSinfo');
+const EventEmitter = require('events').EventEmitter;
+const emitter = new EventEmitter();
 emitter.on('beforeCommand', (instruction) => console.log(`You wrote: ${instruction}. Trying to run command.`));
 emitter.on('afterCommand', () => console.log('Task finished'));
 process.stdin.setEncoding('utf-8');

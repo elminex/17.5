@@ -1,6 +1,6 @@
-let os = require('os');
-let colors = require('colors');
-let time = require('./time')
+const os = require('os');
+const colors = require('colors');
+const time = require('./time')
 function getOSinfo() {
     let type = os.type();
     let release = os.release();
